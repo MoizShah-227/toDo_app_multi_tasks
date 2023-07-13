@@ -87,13 +87,13 @@ function display(){
     let input_task;
     let array=[]; 
     for(var i=0;i<todoList.length;i++){
-        array[i] =document.createElement("input");
-        array[i].classList.add("havelist",'m-2','d-flex');
-        array[i].type ='text';
+        input_task =document.createElement("input");
+         input_task.classList.add("havelist",'m-2','d-flex');
+        input_task.type ='text';
         let newdata = i+":"+todoList[i]
-        array[i].value =newdata;
-        array[i].setAttribute('readonly','readonly');
-        store.appendChild(array[i]);   
+         input_task.value =newdata;
+        input_task.setAttribute('readonly','readonly');
+        store.appendChild(input_task);   
     }
 
     const update_action = document.createElement("div");
@@ -121,8 +121,8 @@ function display(){
             input_title.removeAttribute("readonly");
             input_title.focus(); 
             for(var i=0;i<todoList.length;i++){
-            array[i].removeAttribute("readonly");  
-            array[i].focus();
+            input_task.removeAttribute("readonly");  
+            input_task.focus();
             }  
         }
         else{
