@@ -1,0 +1,57 @@
+body{
+    background-color: #DBDBDB;
+    color: white;
+}
+.container{
+    width: 60%;
+    margin-top: 3%;
+    padding: 40px;
+}
+.title-input{
+    background-color: #DBDBDB;
+    width: 80%;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.subtask-input{
+    background-color: #DBDBDB;
+    width: 80%;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.subtask-add-btn{
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.save-btn{
+    margin-top: 8px;
+    color:white;
+    width: 60px;
+    font-size: 20px;
+   height: 40px;
+    align-items: center;
+    border: transparent;
+    border-radius: 4px;
+}
+.subtask-remove-btn{
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
