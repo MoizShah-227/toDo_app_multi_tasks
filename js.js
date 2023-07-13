@@ -63,6 +63,8 @@
     //   console.log("Title: ", titleInput.value);
     //   console.log("Subtasks: ", todoList);
       display();
+      titleInput.value=' ';
+      subTaskInput.value =' ';
     });
 
     function display(){
