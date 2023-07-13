@@ -118,7 +118,7 @@ function display(){
         if(edit_item.innerText.toLocaleLowerCase()=='edit'){
             edit_item.innerText="save";
             input_title.removeAttribute("readonly");
-            input_task.removeAttribute("readonly");
+             input_task.removeAttribute("readonly");  
             input_title.focus(); 
             input_task.focus();  
         }
@@ -126,10 +126,12 @@ function display(){
                 edit_item.innerText ="Edit";
                 input_title.setAttribute('readonly','readonly');
                 input_task.setAttribute('readonly','readonly');
+                
+               
             }
         
     });
 
     data.appendChild(store);
-
+       
 }
