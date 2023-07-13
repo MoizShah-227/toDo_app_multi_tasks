@@ -95,6 +95,11 @@
         update_action.classList.add('uptd-action');
         store.appendChild(update_action);
 
+        const edit_item = document.createElement('button');
+	    edit_item.classList.add('edit','btn','fa','fa-pencil-square','btn-success','m-2');
+	    edit_item.type="button";
+        store.appendChild(edit_item);
+
         const delete_item = document.createElement('button');
 		delete_item.classList.add('delete','btn','btn-danger','fa','fa-trash');
         store.appendChild(delete_item);
@@ -104,4 +109,5 @@
         })
 
         data.appendChild(store);
+
     }
