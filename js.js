@@ -1,8 +1,9 @@
-
+    var Model = document.getElementById("Model");
     var subTasksContainer = document.getElementById("subTasksContainer");
     var saveBtn = document.getElementById("saveBtn");
     var titleInput = document.getElementById("titleInput");
     var data =document.getElementById("data");
+    var head =document.getElementsByClassName("head");
     var todoList = [];
     let count=0;
   
@@ -96,9 +97,11 @@
         store.appendChild(update_action);
 
         const edit_item = document.createElement('button');
-	    edit_item.classList.add('edit','btn','fa','fa-pencil-square','btn-success','m-2');
+	    edit_item.classList.add('edit','m-2');
 	    edit_item.type="button";
+        edit_item.innerText ="Edit";
         store.appendChild(edit_item);
+
 
         const delete_item = document.createElement('button');
 		delete_item.classList.add('delete','btn','btn-danger','fa','fa-trash');
@@ -108,6 +111,20 @@
             data.removeChild(store);
         })
 
+        edit_item.addEventListener('click',(e)=>{
+            if(edit_item.innerText.toLocaleLowerCase()=='edit'){
+                edit_item.innerText="save"; 
+            }else{
+                    edit_item.innerText ="Edit";
+                    input_item.setAttribute('readonly','readonly');
+                }
+            
+        })
+
         data.appendChild(store);
 
+    }
+
+    function edit(){   
+        
     }
